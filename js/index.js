@@ -1,8 +1,13 @@
-//let newMail = document.getElementById("contact");
-//mail = document.getElementsByName("submit");
-mail.href = "thmaskell@oakland.edu";
-mail.click();
-function submitEmail() {
-  mail.href = "thmaskell@oakland.edu";
-  mail.submitEmail();
-}
+const textClear = document.querySelector(".reset");
+const textSend = document.querySelector(".submit");
+textClear.addEventListener("click", (e) => {
+  document.getElementById("contacts").value = "";
+  console.log("TEST");
+});
+textSend.addEventListener("click", (e) => {
+  window.open(
+    `mailto:thmaskell@oakland.edu?subject=Contact Us&body=${document.querySelector(
+      ".textClear"
+    )}`
+  );
+});

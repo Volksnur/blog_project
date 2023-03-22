@@ -660,7 +660,7 @@ p {
   display: block;
   text-decoration-color: rgb(5, 5, 5);
 }
-input[type="submit"] {
+button[id="submit"] {
   background: rgb(236, 236, 241);
   border-style: outset;
   border-color: #181919;
@@ -670,7 +670,17 @@ input[type="submit"] {
   font: bold 12px;
   border-style: solid;
 }
-input[type="submit"]:hover {
+button[id="reset"] {
+  background: rgb(236, 236, 241);
+  border-style: outset;
+  border-color: #181919;
+  border: #181919;
+  height: 45px;
+  width: 90px;
+  font: bold 12px;
+  border-style: solid;
+}
+button[id="submit"]:hover {
   background: rgb(191, 191, 191);
   border-style: outset;
   border-color: #181919;
@@ -680,16 +690,21 @@ input[type="submit"]:hover {
   font: bold 12px;
   border-style: solid;
 }
-input[type="text-box"] {
-  /*line-height: 50px; */
-  /*vertical-align: text-top; */
-  /*padding-top: 0;
-  padding-left: 0; */
+button[id="reset"]:hover {
+  background: rgb(191, 191, 191);
+  border-style: outset;
+  border-color: #181919;
+  border: #181919;
+  height: 45px;
+  width: 90px;
+  font: bold 12px;
+  border-style: solid;
+}
+input[id="contact"] {
   word-wrap: break-word;
   word-break: break-all;
   padding: 0 0 230px 0;
   outline: none;
-  /*height: 25px; */
   left: 0;
   position: relative;
   width: 500px;
@@ -700,8 +715,6 @@ svg {
   margin: auto;
   text-align: center;
 }
-
-/* Test to make column cards*/
 .news {
   float: left;
   width: 32%;
